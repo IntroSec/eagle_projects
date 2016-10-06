@@ -4315,27 +4315,27 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="6.1" y1="10.4" x2="8.1" y2="10.4" width="0.127" layer="21"/>
 <circle x="7.1" y="11.4" radius="0.806225" width="0.127" layer="21"/>
 <circle x="7.1" y="11.4" radius="0.1" width="0.127" layer="21"/>
-<smd name="TX" x="8.2" y="5.8" dx="2.5" dy="1" layer="1" roundness="17"/>
-<smd name="RX" x="8.2" y="3.8" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO4" x="8.2" y="1.8" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO5" x="8.2" y="-0.2" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO0" x="8.2" y="-2.2" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO2" x="8.2" y="-4.2" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO15" x="8.2" y="-6.2" dx="2.5" dy="1" layer="1"/>
-<smd name="REST" x="-8.2" y="5.8" dx="2.5" dy="1" layer="1"/>
-<smd name="ADC" x="-8.2" y="3.8" dx="2.5" dy="1" layer="1"/>
-<smd name="CH_PD" x="-8.2" y="1.8" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO16" x="-8.2" y="-0.2" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO14" x="-8.2" y="-2.2" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO12" x="-8.2" y="-4.2" dx="2.5" dy="1" layer="1"/>
-<smd name="GPIO13" x="-8.2" y="-6.2" dx="2.5" dy="1" layer="1"/>
+<smd name="TX" x="8.2" y="5.8" dx="2.5" dy="1" layer="16" roundness="17"/>
+<smd name="RX" x="8.2" y="3.8" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO4" x="8.2" y="1.8" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO5" x="8.2" y="-0.2" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO0" x="8.2" y="-2.2" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO2" x="8.2" y="-4.2" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO15" x="8.2" y="-6.2" dx="2.5" dy="1" layer="16"/>
+<smd name="REST" x="-8.2" y="5.8" dx="2.5" dy="1" layer="16"/>
+<smd name="ADC" x="-8.2" y="3.8" dx="2.5" dy="1" layer="16"/>
+<smd name="CH_PD" x="-8.2" y="1.8" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO16" x="-8.2" y="-0.2" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO14" x="-8.2" y="-2.2" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO12" x="-8.2" y="-4.2" dx="2.5" dy="1" layer="16"/>
+<smd name="GPIO13" x="-8.2" y="-6.2" dx="2.5" dy="1" layer="16"/>
 <text x="-3.8" y="8.7" size="1.016" layer="21">ESP-07</text>
 <rectangle x1="-7" y1="8" x2="-4" y2="11" layer="21"/>
 <rectangle x1="2" y1="8" x2="5" y2="11" layer="21"/>
 <text x="-8" y="13" size="1.27" layer="25">&gt;Name</text>
 <text x="-8" y="-11.1" size="1.27" layer="27">&gt;Value</text>
-<smd name="VCC" x="-8.2" y="-8.105" dx="2.5" dy="1" layer="1"/>
-<smd name="GND" x="8.2" y="-8.105" dx="2.5" dy="1" layer="1"/>
+<smd name="VCC" x="-8.2" y="-8.105" dx="2.5" dy="1" layer="16"/>
+<smd name="GND" x="8.2" y="-8.105" dx="2.5" dy="1" layer="16"/>
 </package>
 </packages>
 <symbols>
@@ -6882,7 +6882,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND7" library="Introsec-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="Introsec-Aesthetics" deviceset="GND" device=""/>
 <part name="P+5" library="Introsec-Aesthetics" deviceset="VCC" device=""/>
-<part name="IC1" library="SparkFun-PowerIC" deviceset="V_REG_78XX" device="SINK" value="LM394"/>
+<part name="IC1" library="SparkFun-PowerIC" deviceset="V_REG_78XX" device="SINK"/>
 </parts>
 <sheets>
 <sheet>
@@ -6965,7 +6965,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="GND2" gate="1" x="-109.22" y="78.74"/>
 <instance part="GND3" gate="1" x="-154.94" y="160.02" rot="R180"/>
 <instance part="GND4" gate="1" x="-137.16" y="116.84"/>
-<instance part="GND5" gate="1" x="-226.06" y="104.14" rot="R270"/>
+<instance part="GND5" gate="1" x="-226.06" y="106.68" rot="R270"/>
 <instance part="GND6" gate="1" x="-116.84" y="116.84"/>
 <instance part="GND7" gate="1" x="-99.06" y="116.84"/>
 <instance part="GND8" gate="1" x="-220.98" y="160.02" rot="R180"/>
@@ -7007,6 +7007,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <junction x="-109.22" y="88.9"/>
 </segment>
 <segment>
+<pinref part="S1" gate="S" pin="1"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="-213.36" y1="106.68" x2="-223.52" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="-137.16" y1="127" x2="-137.16" y2="119.38" width="0.1524" layer="91"/>
@@ -7040,11 +7045,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="-213.36" y1="152.4" x2="-220.98" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-220.98" y1="152.4" x2="-220.98" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="S1" gate="S" pin="2"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="-213.36" y1="104.14" x2="-223.52" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="3">
